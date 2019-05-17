@@ -6,6 +6,8 @@ from .xu import XuDecoder
 from .switchinggru import SwitchingGRUDecoder
 from .vector import VectorDecoder
 
+# PW layer family
+from .pw_imagination import PWImaginationDecoder
 
 def get_decoder(type_):
     """Only expose ones with compatible __init__() arguments for now."""

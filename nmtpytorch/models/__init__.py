@@ -18,3 +18,5 @@ from .multitask_att import MultitaskAtt
 ##########################################
 ASRv2 = ASR
 AttentiveMNMT = AttentiveRawMNMT
+
+from .pw import *

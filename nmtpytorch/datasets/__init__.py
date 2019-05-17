@@ -7,6 +7,7 @@ from .onehot import OneHotDataset
 from .numpy_sequence import NumpySequenceDataset
 from .label import LabelDataset
 from .shelve import ShelveDataset
+from .pw import PWNumpyDataset
 
 # Second the selector function
 def get_dataset(type_):
@@ -19,6 +20,8 @@ def get_dataset(type_):
         'onehot': OneHotDataset,
         'label': LabelDataset,
         'shelve': ShelveDataset,
+        # PW Dataset classes
+        'pwnumpy': PWNumpyDataset,
     }[type_.lower()]
 
 

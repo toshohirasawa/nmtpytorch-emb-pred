@@ -1,0 +1,1 @@
+from .embedding import EmbeddingOutputDecoder as PWEmbeddingOutputDecoder
