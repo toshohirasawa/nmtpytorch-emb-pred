@@ -42,10 +42,10 @@ TRAIN_DEFAULTS = {
     'eval_zero': False,          # Evaluate once before starting training
                                  # Useful when using pretrained_file
     'save_best_metrics': True,   # Save best models for each eval_metric
-    'save_path': '',             # Path to root experiment folder
+    'save_path': './models',             # Path to root experiment folder
     'checkpoint_freq': 5000,     # Periodic checkpoint frequency
     'n_checkpoints': 5,          # Number of checkpoints to keep
-    'tensorboard_dir': '',       # Enable TB and give global log folder
+    'tensorboard_dir': './tb_dir',       # Enable TB and give global log folder
     'pretrained_file': '',       # A .ckpt file from which layers will be initialized
     'freeze_layers': '',         # comma sep. list of layer prefixes to freeze
     'handle_oom': False,         # Skip out-of-memory batches

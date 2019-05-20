@@ -18,6 +18,9 @@ if __name__ == '__main__':
                     "configuration/checkpoint/snapshot",
         argument_default=argparse.SUPPRESS)
 
+    # debug
+    parser.add_argument('--debug', action='store_true', default=False, help='Remote debug mode')
+
     subparsers = parser.add_subparsers(dest='cmd', title='sub-commands',
                                        description='Valid sub-commands')
 
@@ -97,6 +100,22 @@ if __name__ == '__main__':
 
     # Parse command-line arguments first
     args = parser.parse_args()
+
+    # enable remote debug first
+    if args.debug:
+        import ptvsd
+        from time import sleep
+
+        remote_port = os.environ.get('PTVSD_PORT', 13000)
+        print(f'Waiting for attachment (port: {remote_port}) ...', end='', flush=True)
+
+        ptvsd.enable_attach(address=('0.0.0.0', remote_port))
+        ptvsd.wait_for_attach()
+
+        # waiting for attachment completion
+        sleep(2)
+        print('Attached')
+
     if args.cmd is None:
         parser.print_help()
         sys.exit(1)

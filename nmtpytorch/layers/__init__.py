@@ -18,3 +18,6 @@ from .encoders import *
 
 # Decoder layers
 from .decoders import *
+
+# Panda Works components
+from .pw import *
