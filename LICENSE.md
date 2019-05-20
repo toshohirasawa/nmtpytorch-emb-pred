@@ -1,6 +1,6 @@
 ## MIT License
 
-Copyright (c) 2017 - Le Mans University - Language and Speech Technology (LST) Lab
+Copyright (c) 2019 - Tosho Hirasawa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,8 @@ SOFTWARE.
 
 --
 
-**nmtpytorch** includes code from the following projects which have their own licenses:
+**nmtpytorch-emb-pred** includes code from the following projects which have their own licenses:
 
  - `multi-bleu.perl` from [mosesdecoder](https://github.com/moses-smt/mosesdecoder) [[LGPL-2.1](https://github.com/moses-smt/mosesdecoder/blob/master/COPYING)]
  - `pycocoevalcap` from [coco-caption](https://github.com/tylin/coco-caption) [[BSD-2-Clause](https://github.com/tylin/coco-caption/blob/master/license.txt)]
+- `nmtpytorch` from [nmtpytorch](https://github.com/lium-lst/nmtpytorch) [[MIT License](https://github.com/lium-lst/nmtpytorch/blob/master/LICENSE.md)]
