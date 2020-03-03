@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-import fastText
+import fasttext
 from tqdm import tqdm
 from sklearn.decomposition import PCA
 
