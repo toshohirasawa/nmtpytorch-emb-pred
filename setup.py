@@ -44,7 +44,7 @@ setuptools.setup(
     keywords='nmt neural-mt translation sequence-to-sequence deep-learning pytorch',
     python_requires='~=3.7',
     install_requires=[
-        'numpy', 'scipy', 'scikit-learn', 'tqdm', 'Pillow==6.2.1',
+        'numpy', 'scipy', 'scikit-learn', 'tqdm', 'Pillow==9.0.1',
         'torch==1.0.0', 'torchvision==0.2.1',
         'sacrebleu~=1.2.9', 'tensorboardX==1.1',
         'editdistance==0.4', 'subword_nmt==0.3.5', 'fasttext==0.9.1',
